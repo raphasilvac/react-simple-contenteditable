@@ -5,7 +5,7 @@ A simple contenteditable component
 ContentEditable has some known issues, the purpose of this component is to avoid some of its problems:
 
 * Enable "plaintext-only" for more browsers;
-* Prevent the cursor jumps to the beginning of the field;
+* Prevent cursor jumping to the beginning of the field;
 
 ## Example
 ```html
