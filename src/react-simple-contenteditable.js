@@ -38,17 +38,19 @@ export default class ContentEditable extends Component {
   }
 
   render () {
-    const { html, contentEditable, ...props } = this.props;
+    const { tagName, html, contentEditable, ...props } = this.props;
+
+    const Element = tagName || "div";
 
     return (
-      <div
+      <Element
         {...props}
         ref="element"
-        dangerouslySetInnerHTML={{__html: html}}
+        dangerouslySetInnerHTML={{ __html: html }}
         contentEditable={ contentEditable === 'false' ? false : true }
         onInput={ this._onChange }
-        onPaste={ this._onPaste } >
-      </div>
+        onPaste={ this._onPaste }
+      />
     )
   }
 }
