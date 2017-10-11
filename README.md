@@ -15,7 +15,7 @@ import ContentEditable from 'react-simple-contenteditable';
 class App extends Component {
   constructor (props) {
     super(props);
-    
+
     this.state = {
       title: "Title here"
     }
@@ -35,6 +35,7 @@ class App extends Component {
         <ContentEditable
           html={this.state.title}
           className="my-class"
+          tagName="h1"
           onChange={ this.handleChange }
           contentEditable="plaintext-only"
         />
