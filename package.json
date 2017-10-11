@@ -1,10 +1,13 @@
 {
   "name": "react-simple-contenteditable",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple contenteditable component",
   "main": "lib/index.js",
   "repository": "https://github.com/raphasilvac/react-simple-contenteditable.git",
   "author": "Raphael Silva Cavalcanti",
+  "contributors": [
+    "Ashley Williams <hi@ashleyw.co.uk>"
+  ],
   "license": "MIT",
   "dependencies": {
     "react": "^15.4.2"
