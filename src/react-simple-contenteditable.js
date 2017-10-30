@@ -9,7 +9,7 @@ export default class ContentEditable extends Component {
 
   _onChange (ev) {
     const method  = this.getInnerMethod();
-    const value   = this.refs.element[method];
+    const value   = this.elem[method];
 
     this.props.onChange(ev, value);
   }
