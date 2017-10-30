@@ -34,7 +34,7 @@ export default class ContentEditable extends Component {
 
   shouldComponentUpdate(nextProps, nextState) {
     const method = this.getInnerMethod();
-    return nextProps.html !== this.el[method];
+    return nextProps.html !== this.elem[method];
   }
 
   render () {
@@ -45,7 +45,7 @@ export default class ContentEditable extends Component {
     return (
       <Element
         {...props}
-        ref={(el) => { this.el = el }}
+        ref={(elem) => { this.elem = elem }}
         dangerouslySetInnerHTML={{ __html: html }}
         contentEditable={ contentEditable === 'false' ? false : true }
         onInput={ this._onChange }
