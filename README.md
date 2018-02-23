@@ -47,7 +47,7 @@ class App extends Component {
 ```
 
 ### License
-Copyright (c) 2016 Dylan Greene, contributors.
+Copyright (c) 2018 Raphael Cavalcanti, contributors.
 
 Released under the [MIT license](https://tldrlegal.com/license/mit-license).
 
