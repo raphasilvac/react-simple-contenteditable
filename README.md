@@ -45,3 +45,10 @@ class App extends Component {
 }
 
 ```
+
+### License
+Copyright (c) 2016 Dylan Greene, contributors.
+
+Released under the [MIT license](https://tldrlegal.com/license/mit-license).
+
+Screenshots are [CC BY-SA](http://creativecommons.org/licenses/by-sa/4.0/) (Attribution-ShareAlike).
