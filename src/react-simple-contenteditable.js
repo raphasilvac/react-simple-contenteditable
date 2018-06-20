@@ -3,8 +3,9 @@ import React, { Component } from 'react';
 export default class ContentEditable extends Component {
   constructor (props) {
     super(props);
-    this._onChange  = this._onChange.bind(this);
-    this._onPaste   = this._onPaste.bind(this);
+    this._onChange   = this._onChange.bind(this);
+    this._onPaste    = this._onPaste.bind(this);
+    this._onKeyPress = this._onKeyPress.bind(this);
   }
 
   _onChange (ev) {
@@ -26,6 +27,13 @@ export default class ContentEditable extends Component {
     if (onPaste) {
       onPaste(ev);
     }
+  }
+
+  _onKeyPress (ev) {
+    const method  = this.getInnerMethod();
+    const value   = this.elem[method];
+
+    this.props.onKeyPress(ev, value);
   }
 
   getInnerMethod () {
@@ -50,6 +58,7 @@ export default class ContentEditable extends Component {
         contentEditable={ contentEditable === 'false' ? false : true }
         onInput={ this._onChange }
         onPaste={ this._onPaste }
+        onKeyPress={ this._onKeyPress }
       />
     )
   }
