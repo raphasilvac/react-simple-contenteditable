@@ -1,6 +1,6 @@
 {
   "name": "react-simple-contenteditable",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A simple contenteditable component",
   "main": "lib/index.js",
   "repository": "https://github.com/raphasilvac/react-simple-contenteditable.git",
